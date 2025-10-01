@@ -1,73 +1,67 @@
-# Welcome to your Lovable project
+# Mavix
 
-## Project info
+Strategy & Venture Building website voor zorg en daarbuiten.
 
-**URL**: https://lovable.dev/projects/1d06602a-3984-47ce-85a8-498a23316294
+## GitHub Pages Deployment
 
-## How can I edit this code?
+Deze site is geconfigureerd voor automatische deployment naar GitHub Pages met het custom domain **mavix.be**.
 
-There are several ways of editing your application.
+### Setup Stappen
 
-**Use Lovable**
+1. **Push je code naar GitHub**
+   ```sh
+   git push origin main
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1d06602a-3984-47ce-85a8-498a23316294) and start prompting.
+2. **Activeer GitHub Pages**:
+   - Ga naar je repository settings op GitHub
+   - Navigeer naar "Pages" in het linker menu
+   - Bij "Source", selecteer "GitHub Actions"
 
-Changes made via Lovable will be committed automatically to this repo.
+3. **Configureer je custom domain (mavix.be)**:
+   - Bij "Custom domain", voer `mavix.be` in
+   - GitHub zal de CNAME file automatisch detecteren
 
-**Use your preferred IDE**
+4. **DNS instellingen bij je domain registrar**:
+   Voeg deze DNS records toe voor mavix.be:
+   - `A` record: `@` → `185.199.108.153`
+   - `A` record: `@` → `185.199.109.153`
+   - `A` record: `@` → `185.199.110.153`
+   - `A` record: `@` → `185.199.111.153`
+   - `CNAME` record: `www` → `[jouw-github-username].github.io`
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+5. **Wacht op DNS propagatie** (kan 24-48 uur duren)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+6. **Activeer HTTPS** in GitHub Pages settings (gebeurt automatisch na DNS propagatie)
 
-Follow these steps:
+### Local Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Installeer dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+De site wordt beschikbaar op `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+De gebouwde site komt in de `dist` folder en wordt automatisch gedeployed naar GitHub Pages bij elke push naar main.
 
-## What technologies are used for this project?
+## Project info
 
-This project is built with:
+**Lovable URL**: https://lovable.dev/projects/1d06602a-3984-47ce-85a8-498a23316294
+
+## Technologies
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1d06602a-3984-47ce-85a8-498a23316294) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

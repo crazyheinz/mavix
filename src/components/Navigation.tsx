@@ -14,7 +14,7 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">Mavenly</h1>
+            <h1 className="text-2xl font-bold text-primary">Mavix</h1>
           </div>
 
           {/* Navigation Links */}

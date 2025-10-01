@@ -32,7 +32,7 @@ const About = () => {
     <section id="over" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Over Mavenly</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Over Mavix</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Strategisch innovatieconsultancy op het snijvlak van onderzoek, strategie en executie
           </p>
@@ -65,7 +65,7 @@ const About = () => {
 
           {/* Values Cards */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold mb-8">Waar Mavenly voor staat</h3>
+            <h3 className="text-2xl font-bold mb-8">Waar Mavix voor staat</h3>
             {values.map((value, index) => (
               <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth">
                 <CardContent className="p-6">
