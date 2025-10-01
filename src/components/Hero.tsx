@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold text-balance">
               We build strategies{" "}
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
+              <span className="bg-gradient-hero text-white px-4 py-1 rounded-lg inline-block">
                 that move
               </span>
             </h1>
