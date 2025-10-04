@@ -65,3 +65,7 @@ De gebouwde site komt in de `dist` folder en wordt automatisch gedeployed naar G
 - React
 - shadcn-ui
 - Tailwind CSS
+
+## Status
+
+Live op mavix.be via GitHub Actions deployment.
