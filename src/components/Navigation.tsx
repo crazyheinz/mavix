@@ -18,7 +18,7 @@ const Navigation = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="flex items-center space-x-6 md:space-x-12">
             <button
               onClick={() => scrollToSection('home')}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
@@ -52,16 +52,6 @@ const Navigation = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <Button
-              onClick={() => scrollToSection('contact')}
-              variant="professional"
-              size="sm"
-            >
-              Contact
-            </Button>
-          </div>
         </div>
       </div>
     </nav>
