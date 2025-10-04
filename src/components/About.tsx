@@ -42,19 +42,14 @@ const About = () => {
           {/* About Content */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Wie</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Ik ben Monika — Strategisch Innovatieconsultant & Venture Builder. 
-                Achtergrond in meertalige communicatie en statistiek, ervaring als business analyst 
-                en beleidsmedewerker. Ik werk op het snijvlak van onderzoek, strategie en executie.
+                Mavix is een strategisch innovatiebureau dat organisaties helpt vernieuwen met focus, snelheid en impact.
               </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Sectorfocus</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Zorg en welzijn, met doorsteken naar CX-gedreven diensten en platformen. 
-                Ervaring met mutualiteiten, zorgdiensten en digitale proposities.
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                We combineren onderzoek, strategie en experimenten om van inzicht tot resultaat te komen — zonder onnodige complexiteit.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Geen dikke rapporten, maar heldere keuzes en tastbare vooruitgang.
               </p>
             </div>
 
