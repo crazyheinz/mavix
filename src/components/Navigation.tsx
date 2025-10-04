@@ -18,7 +18,7 @@ const Navigation = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             <button
               onClick={() => scrollToSection('home')}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
