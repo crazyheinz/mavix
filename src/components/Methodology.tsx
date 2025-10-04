@@ -88,7 +88,7 @@ const Methodology = () => {
         <div className="bg-gradient-subtle rounded-2xl p-8 text-center shadow-soft">
           <h3 className="text-2xl font-bold mb-4">Slimmer vernieuwen, sneller leren</h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
-            Veel organisaties willen vernieuwen, maar weten niet waar te beginnen. Mavix helpt om kansen scherp te stellen en ideeën om te zetten in haalbare, meetbare oplossingen. We combineren strategie, businessanalyse en experimenten om snel te leren wat echt werkt.
+            Veel organisaties willen vernieuwen, maar weten niet waar te beginnen. Mavix helpt om kansen scherp te stellen en ideeën om te zetten in haalbare, meetbare oplossingen.
           </p>
         </div>
 
