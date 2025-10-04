@@ -45,7 +45,7 @@ const Hero = () => {
               <h3 className="font-semibold mb-2">Diep inzicht in doelgroepen en context
 
             </h3>
-              <p className="text-sm text-muted-foreground">Interviews, data en AI-analyse om echte noden bloot te leggen — geen aannames, maar bewijs.
+              <p className="text-sm text-muted-foreground">Interviews en data-analyse om echte noden bloot te leggen — geen aannames, maar bewijs.
             </p>
             </div>
           </div>
