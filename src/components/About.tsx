@@ -79,33 +79,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Case Highlight */}
-        <div className="mt-20">
-          <div className="bg-gradient-card rounded-2xl p-8 shadow-medium">
-            <h3 className="text-2xl font-bold mb-6 text-center">Highlight Case</h3>
-            <div className="max-w-4xl mx-auto">
-              <h4 className="text-xl font-semibold mb-4">
-                Digitale begeleiding voor zwangere klanten
-              </h4>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Van hypothesen naar MVP-app, KPI's voor conversie & efficiëntie, 
-                en UX-flows die consulenten ontzorgen. Resultaat: besluitbaar plan goedgekeurd, 
-                MVP-traject opgestart, eerste experimenten tonen hogere betrokkenheid en tijdswinst.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 bg-success-light text-success-foreground rounded-full text-sm font-medium">
-                  ✓ Hogere conversie
-                </span>
-                <span className="px-3 py-1 bg-success-light text-success-foreground rounded-full text-sm font-medium">
-                  ✓ Tijdswinst consulenten
-                </span>
-                <span className="px-3 py-1 bg-success-light text-success-foreground rounded-full text-sm font-medium">
-                  ✓ Verhoogde betrokkenheid
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
