@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="pt-16 pb-20 px-4">
+    <section id="home" className="pt-32 pb-20 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Hero Content */}
         <div className="text-center space-y-8 mb-16">
