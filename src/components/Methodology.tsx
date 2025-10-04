@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, Frame, CheckCircle, Hammer, TrendingUp } from "lucide-react";
+import { Search, Frame, CheckCircle, Hammer, TrendingUp, Users } from "lucide-react";
 
 const Methodology = () => {
   const steps = [
@@ -32,6 +32,12 @@ const Methodology = () => {
       number: "5", 
       title: "Schalen",
       description: "We verfijnen de propositie, verbreden segmenten en borgen ritme en KPI's."
+    },
+    {
+      icon: <Users className="h-8 w-8" />,
+      number: "6", 
+      title: "Implementeren",
+      description: "We implementeren wat werkt in teams en processen. We begeleiden changemanagement en duurzame groei."
     }
   ];
 
