@@ -79,42 +79,6 @@ const Hero = () => {
             Trajecten rond zwangerschap, mantelzorg, huishoudhulp en verpleegkundig platformen
           </p>
         </div>
-
-        {/* What You Get */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold text-center mb-12">Wat je krijgt</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-primary rounded-xl mx-auto flex items-center justify-center">
-                <div className="w-8 h-8 bg-primary-foreground rounded-md"></div>
-              </div>
-              <h3 className="text-xl font-semibold">Heldere strategie</h3>
-              <p className="text-muted-foreground">
-                Scherpe positionering en value proposition per doelgroep.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-primary rounded-xl mx-auto flex items-center justify-center">
-                <div className="w-8 h-8 bg-primary-foreground rounded-md"></div>
-              </div>
-              <h3 className="text-xl font-semibold">Concreet plan</h3>
-              <p className="text-muted-foreground">
-                Roadmap met prioriteiten, wie-wat-wanneer.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 bg-gradient-primary rounded-xl mx-auto flex items-center justify-center">
-                <div className="w-8 h-8 bg-primary-foreground rounded-md"></div>
-              </div>
-              <h3 className="text-xl font-semibold">MVP & validatie</h3>
-              <p className="text-muted-foreground">
-                Wat we nu lanceren, hoe we het meten, wat "goed genoeg" is.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>;
 };
