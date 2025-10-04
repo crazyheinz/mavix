@@ -67,8 +67,7 @@ const Services = () => {
 
   return (
     <section id="diensten" className="py-20 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+      <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Diensten</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Van strategie tot validatie - elke fase vraagt een andere aanpak
@@ -115,7 +114,6 @@ const Services = () => {
             Bespreek je uitdaging
           </Button>
         </div>
-      </div>
     </section>
   );
 };
