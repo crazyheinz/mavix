@@ -53,7 +53,7 @@ const Hero = () => {
           <div className="flex items-start space-x-4 p-6 bg-gradient-card rounded-xl shadow-soft">
             <CheckCircle className="h-6 w-6 text-success mt-1 flex-shrink-0" />
             <div>
-              <h3 className="font-semibold mb-2">Concreet naar implementatie</h3>
+              <h3 className="font-semibold mb-2">Van strategie naar werkend prototype</h3>
               <p className="text-sm text-muted-foreground">
                 MVP definiëren, UX schetsen, experimenten opzetten.
               </p>
