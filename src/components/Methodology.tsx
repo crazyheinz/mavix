@@ -31,7 +31,7 @@ const Methodology = () => {
       icon: <TrendingUp className="h-8 w-8" />,
       number: "5", 
       title: "Schalen",
-      description: "We verfijnen de propositie, verbreden segmenten en borgen ritme en KPI's."
+      description: "We verankeren wat werkt in teams en processen, en bouwen verder. We verbreden segmenten en borgen ritme en KPI's."
     },
     {
       icon: <Users className="h-8 w-8" />,
