@@ -1,58 +1,58 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Clock, Target, Users, Zap } from "lucide-react";
+import { Globe, Server, Smartphone, Cog } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: <Zap className="h-8 w-8" />,
-      title: "Strategie Sprint",
-      duration: "2 weken",
-      description: "Van ambitie naar scherp plan met prioriteiten en KPI's.",
+      icon: <Globe className="h-8 w-8" />,
+      title: "Web Applicaties",
+      duration: "vanaf 4 weken",
+      description: "Moderne, responsieve web apps met React en TypeScript.",
       details: [
-        "Value proposition per segment (pains/gains/jobs)",
-        "Prioriteiten & roadmap (0–3 mnd / 3–6 mnd)",
-        "KPI-set (conversie, retentie, kost, tijdswinst)",
-        "Beslisdocument voor directie"
-      ],
-      price: "vanaf €X.XXX"
-    },
-    {
-      icon: <Target className="h-8 w-8" />,
-      title: "Venture Discovery",
-      duration: "4–8 weken",
-      description: "MVP definiëren en met echte gebruikers valideren.",
-      details: [
-        "MVP-definitie (scope, UX-schetsen, datamodel)",
-        "Validatieplan (hypothesen, metingen, succescriteria)",
-        "Experimenten (smoke tests, prototyping, pilots)",
-        "Go/No-Go advies met leerpunten"
+        "Single Page Applications (SPA)",
+        "Progressive Web Apps (PWA)",
+        "Dashboards & admin panels",
+        "E-commerce platforms"
       ],
       price: "op offerte"
     },
     {
-      icon: <Users className="h-8 w-8" />,
-      title: "Fractional Product Lead",
-      duration: "retainer",
-      description: "Tijdelijk leiderschap en ritme voor je innovatie.",
+      icon: <Server className="h-8 w-8" />,
+      title: "API & Backend",
+      duration: "vanaf 2 weken",
+      description: "Robuuste APIs en backend systemen die schalen.",
       details: [
-        "Wekelijkse prioritering & voortgang",
-        "Stakeholdermanagement en besluitvorming",
-        "Roadmap actualisatie en KPI-review",
-        "1–2 dagen/week, minimaal 3 maanden"
+        "RESTful & GraphQL APIs",
+        "Microservices architectuur",
+        "Database design & optimalisatie",
+        "Cloud infrastructure (AWS, GCP)"
       ],
-      price: "op maat"
+      price: "op offerte"
     },
     {
-      icon: <Clock className="h-8 w-8" />,
-      title: "Zorg & Maatschappelijke Proposities",
-      duration: "flexibel",
-      description: "Specifiek voor zorgdoelgroepen en maatschappelijke diensten.",
+      icon: <Smartphone className="h-8 w-8" />,
+      title: "Mobiele Apps",
+      duration: "vanaf 6 weken",
+      description: "Cross-platform apps voor iOS en Android.",
       details: [
-        "Zwangerschap & jonge ouders (educatie, conversie)",
-        "Mantelzorgers (ontzorging, premies, wegwijs)",
-        "Huishoudhulp/Thuiszorg (efficiëntie, tevredenheid)",
-        "Verpleegkundig platform (administratie, software-ecosysteem)"
+        "React Native development",
+        "Native iOS & Android",
+        "App Store deployment",
+        "Push notifications & offline"
+      ],
+      price: "op offerte"
+    },
+    {
+      icon: <Cog className="h-8 w-8" />,
+      title: "Integraties & Automatisering",
+      duration: "flexibel",
+      description: "Verbind systemen en automatiseer processen.",
+      details: [
+        "Third-party API integraties",
+        "Legacy systeem modernisering",
+        "Workflow automatisering",
+        "Data migratie & ETL"
       ],
       price: "vanaf €XXX/dag"
     }
@@ -67,10 +67,11 @@ const Services = () => {
 
   return (
     <section id="diensten" className="py-20 px-4 bg-muted/30">
-      <div className="text-center mb-16">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Diensten</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Van strategie tot validatie - elke fase vraagt een andere aanpak
+            Van concept tot productie - wij bouwen software die werkt
           </p>
         </div>
 
@@ -111,9 +112,10 @@ const Services = () => {
 
         <div className="text-center">
           <Button onClick={scrollToContact} variant="professional" size="lg">
-            Bespreek je uitdaging
+            Bespreek je project
           </Button>
         </div>
+      </div>
     </section>
   );
 };

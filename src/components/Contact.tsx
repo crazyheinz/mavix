@@ -27,7 +27,6 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Simple form validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Vul alle verplichte velden in",
@@ -37,13 +36,11 @@ const Contact = () => {
       return;
     }
 
-    // Here you would typically send the form data to your backend
     toast({
       title: "Bericht verzonden!",
       description: "We nemen binnen 24u contact met je op.",
     });
 
-    // Reset form
     setFormData({ name: '', email: '', company: '', message: '' });
   };
 
@@ -53,7 +50,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Laat ons je doel scherper zetten — en er een roadmap naast leggen
+            Vertel ons over je project — we denken graag mee
           </p>
         </div>
 
@@ -61,10 +58,10 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Vrijblijvend kennismaken</h3>
+              <h3 className="text-2xl font-bold mb-6">Laten we praten</h3>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Plan een 30-min call of stel je vraag via mail. 
-                Binnen 24u reactie op werkdagen. Voorstellen en offertes volgen in 2–3 dagen.
+                Plan een vrijblijvend gesprek of stuur een bericht. 
+                Binnen 24u reactie op werkdagen. Een eerste schatting volgt binnen 2-3 dagen.
               </p>
             </div>
 
@@ -91,8 +88,8 @@ const Contact = () => {
                       <MapPin className="h-6 w-6" />
                     </div>
                     <div>
-                      <h4 className="font-semibold">Regio</h4>
-                      <p className="text-muted-foreground">België (hybride)</p>
+                      <h4 className="font-semibold">Locatie</h4>
+                      <p className="text-muted-foreground">België (remote-first)</p>
                     </div>
                   </div>
                 </CardContent>
@@ -115,9 +112,9 @@ const Contact = () => {
 
             {/* CTA Highlight */}
             <div className="bg-gradient-hero rounded-xl p-6 text-primary-foreground">
-              <h4 className="font-semibold mb-2">Beslis vandaag wat je morgen bouwt</h4>
+              <h4 className="font-semibold mb-2">Klaar om te bouwen?</h4>
               <p className="opacity-90 text-sm">
-                Ontvang een concreet plan binnen 2 weken
+                Van eerste gesprek tot oplevering — wij regelen het
               </p>
             </div>
           </div>
@@ -125,7 +122,7 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="shadow-medium">
             <CardHeader>
-              <CardTitle>Stel je vraag</CardTitle>
+              <CardTitle>Vertel over je project</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -156,31 +153,31 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="company">Organisatie</Label>
+                  <Label htmlFor="company">Bedrijf</Label>
                   <Input
                     id="company"
                     name="company"
                     value={formData.company}
                     onChange={handleInputChange}
-                    placeholder="Je organisatie"
+                    placeholder="Je bedrijf"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Bericht *</Label>
+                  <Label htmlFor="message">Projectomschrijving *</Label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="Vertel over je uitdaging of vraag..."
+                    placeholder="Vertel kort over je project, doelen en timing..."
                     className="min-h-[120px]"
                     required
                   />
                 </div>
 
                 <Button type="submit" variant="professional" size="lg" className="w-full">
-                  Verzend bericht
+                  Verstuur aanvraag
                 </Button>
               </form>
             </CardContent>

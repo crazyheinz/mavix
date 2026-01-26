@@ -26,6 +26,12 @@ const Navigation = () => {
               Home
             </button>
             <button
+              onClick={() => scrollToSection('diensten')}
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
+            >
+              Diensten
+            </button>
+            <button
               onClick={() => scrollToSection('werkwijze')}
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
             >
