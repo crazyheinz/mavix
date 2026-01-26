@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+// Backup image available at: @/assets/hero-image-backup.jpg
 
 const Hero = () => {
   const scrollToContact = () => {
