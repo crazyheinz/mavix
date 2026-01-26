@@ -1,53 +1,53 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, Frame, CheckCircle, Hammer, TrendingUp, Users } from "lucide-react";
+import { Search, Layers, FileCode, Code, TestTube, Rocket } from "lucide-react";
 
 const Methodology = () => {
   const steps = [
     {
       icon: <Search className="h-8 w-8" />,
       number: "1",
-      title: "Begrijpen",
-      description: "We spreken met klanten, medewerkers en partners. We bekijken data, processen en context. We vatten de kernnoden in jobs-to-be-done."
+      title: "Discovery",
+      description: "We analyseren je requirements, bestaande systemen en doelen. We stellen de juiste vragen om scope en prioriteiten helder te krijgen."
     },
     {
-      icon: <Frame className="h-8 w-8" />,
+      icon: <Layers className="h-8 w-8" />,
       number: "2", 
-      title: "Kaderen",
-      description: "We clusteren inzichten, toetsen aannames en schetsen scenario's met impact/haalbaarheid."
+      title: "Architectuur",
+      description: "We ontwerpen een schaalbare technische architectuur. Database models, API design en infrastructure als solide fundament."
     },
     {
-      icon: <CheckCircle className="h-8 w-8" />,
+      icon: <FileCode className="h-8 w-8" />,
       number: "3",
-      title: "Besluiten", 
-      description: "We leggen een kort en besluitbaar plan voor: wat nu, wat later, wat niet."
+      title: "Planning", 
+      description: "User stories, sprint planning en een realistische roadmap. Geen verrassingen, wel duidelijke milestones."
     },
     {
-      icon: <Hammer className="h-8 w-8" />,
+      icon: <Code className="h-8 w-8" />,
       number: "4",
-      title: "Bouwen",
-      description: "We definiëren MVP, UX-flows en experimenten. We meten wat telt en leren snel."
+      title: "Development",
+      description: "Agile sprints met wekelijkse demos. Clean code, code reviews en continuous integration vanaf dag één."
     },
     {
-      icon: <TrendingUp className="h-8 w-8" />,
+      icon: <TestTube className="h-8 w-8" />,
       number: "5", 
-      title: "Schalen",
-      description: "We verankeren wat werkt in teams en processen, en bouwen verder. We verbreden segmenten en borgen ritme en KPI's."
+      title: "Testing & QA",
+      description: "Unit tests, integration tests en end-to-end testing. Security audits en performance optimalisatie."
     },
     {
-      icon: <Users className="h-8 w-8" />,
+      icon: <Rocket className="h-8 w-8" />,
       number: "6", 
-      title: "Implementeren",
-      description: "We implementeren wat werkt in teams en processen. We begeleiden changemanagement en duurzame groei."
+      title: "Deployment & Support",
+      description: "CI/CD pipelines, monitoring en onderhoud. We blijven beschikbaar voor bugfixes, updates en nieuwe features."
     }
   ];
 
   const tools = [
-    "Interviewsjablonen",
-    "JTBD-canvas", 
-    "VPC",
-    "Service blueprints",
-    "KPI-matrix",
-    "Experimenteerbord"
+    "React",
+    "TypeScript", 
+    "Node.js",
+    "PostgreSQL",
+    "Docker",
+    "AWS"
   ];
 
   return (
@@ -56,7 +56,7 @@ const Methodology = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Werkwijze</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Een aanpak die beweegt - van inzicht naar implementatie
+            Van idee naar productie - een bewezen development proces
           </p>
         </div>
 
@@ -86,15 +86,16 @@ const Methodology = () => {
 
         {/* Methodology Highlight */}
         <div className="bg-gradient-subtle rounded-2xl p-8 text-center shadow-soft">
-          <h3 className="text-2xl font-bold mb-4">Slimmer vernieuwen, sneller leren</h3>
+          <h3 className="text-2xl font-bold mb-4">Waarom met ons werken?</h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
-            Veel organisaties willen vernieuwen, maar weten niet waar te beginnen. Mavix helpt om kansen scherp te stellen en ideeën om te zetten in haalbare, meetbare oplossingen.
+            Ervaren developers die weten wat ze doen. Geen juniors die leren op jouw project. 
+            Directe communicatie, snelle iteraties en software die echt werkt.
           </p>
         </div>
 
         {/* Tools */}
         <div className="mt-16">
-          <h3 className="text-xl font-semibold text-center mb-8">Toolstack (selectie)</h3>
+          <h3 className="text-xl font-semibold text-center mb-8">Tech Stack</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {tools.map((tool, index) => (
               <span 

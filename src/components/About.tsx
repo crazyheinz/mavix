@@ -1,23 +1,23 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Zap, Users } from "lucide-react";
+import { Code, Zap, Users } from "lucide-react";
 
 const About = () => {
   const values = [
     {
-      icon: <Heart className="h-6 w-6" />,
-      title: "Helderheid",
-      description: "Complexe dingen eenvoudig en besluitbaar maken."
+      icon: <Code className="h-6 w-6" />,
+      title: "Clean Code",
+      description: "Leesbare, testbare code die andere developers begrijpen."
     },
     {
       icon: <Zap className="h-6 w-6" />,
-      title: "Snel leren", 
-      description: "Liever klein en meetbaar dan groot en onzeker."
+      title: "Continuous Delivery", 
+      description: "Frequente releases, snelle feedback en constante verbetering."
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Mens & data",
-      description: "Gesprekken én cijfers sturen de keuzes."
+      title: "Directe Communicatie",
+      description: "Geen account managers, je praat direct met de developers."
     }
   ];
 
@@ -34,7 +34,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Over Mavix</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Strategisch innovatieconsultancy op het snijvlak van onderzoek, strategie en executie
+            Een team van ervaren developers met passie voor kwaliteit
           </p>
         </div>
 
@@ -43,18 +43,18 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <p className="text-muted-foreground leading-relaxed">
-                Mavix is een strategisch innovatiebureau dat organisaties helpt vernieuwen met focus, snelheid en impact.
+                Mavix is een software development bureau opgericht door developers met 10+ jaar ervaring in het bouwen van complexe systemen.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                We combineren onderzoek, strategie en experimenten om van inzicht tot resultaat te komen — zonder onnodige complexiteit.
+                We geloven dat goede software begint bij goede code. Daarom werken we met moderne technologieën, best practices en een focus op onderhoudbaarheid.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                Geen dikke rapporten, maar heldere keuzes en tastbare vooruitgang.
+                Van startups tot enterprise - we bouwen software die schaalt, presteert en lang meegaat.
               </p>
             </div>
 
             <Button onClick={scrollToContact} variant="professional" size="lg">
-              Laat ons kennismaken
+              Plan een gesprek
             </Button>
           </div>
 
