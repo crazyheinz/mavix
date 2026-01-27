@@ -56,54 +56,41 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              
-              
-            </div>
+        <div className="max-w-xl mx-auto space-y-6">
+          <Card className="shadow-soft">
+            <CardContent className="p-6">
+              <div className="flex items-center space-x-4">
+                <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                  <Mail className="h-6 w-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">E-mail</h4>
+                  <p className="text-muted-foreground">hello@mavix.be</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
-            {/* Contact Details */}
-            <div className="space-y-6">
-              <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                      <Mail className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">E-mail</h4>
-                      <p className="text-muted-foreground">hello@mavix.be</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+          <Card className="shadow-soft">
+            <CardContent className="p-6">
+              <div className="flex items-center space-x-4">
+                <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                  <Phone className="h-6 w-6" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Telefoon</h4>
+                  <p className="text-muted-foreground">+32 474 96 81 38</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
-              <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                      <Phone className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Telefoon</h4>
-                      <p className="text-muted-foreground">+32 474 96 81 38</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* CTA Highlight */}
-            <div className="bg-gradient-hero rounded-xl p-6 text-primary-foreground">
-              <h4 className="font-semibold mb-2">Klaar om te bouwen?</h4>
-              <p className="opacity-90 text-sm">
-                Van eerste gesprek tot oplevering — wij regelen het
-              </p>
-            </div>
+          <div className="bg-gradient-hero rounded-xl p-6 text-primary-foreground">
+            <h4 className="font-semibold mb-2">Klaar om te bouwen?</h4>
+            <p className="opacity-90 text-sm">
+              Van eerste gesprek tot oplevering — wij regelen het
+            </p>
           </div>
-
         </div>
       </div>
     </section>;
