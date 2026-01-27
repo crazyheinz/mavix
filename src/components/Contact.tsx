@@ -6,27 +6,28 @@ import { Label } from "@/components/ui/label";
 import { Mail, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-
 const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     company: '',
     message: ''
   });
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
+    const {
+      name,
+      value
+    } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Vul alle verplichte velden in",
@@ -35,17 +36,18 @@ const Contact = () => {
       });
       return;
     }
-
     toast({
       title: "Bericht verzonden!",
-      description: "We nemen binnen 24u contact met je op.",
+      description: "We nemen binnen 24u contact met je op."
     });
-
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      message: ''
+    });
   };
-
-  return (
-    <section id="contact" className="py-20 px-4">
+  return <section id="contact" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact</h2>
@@ -59,10 +61,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-6">Laten we praten</h3>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Plan een vrijblijvend gesprek of stuur een bericht. 
-                Binnen 24u reactie op werkdagen. Een eerste schatting volgt binnen 2-3 dagen.
-              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">Plan een vrijblijvend gesprek of stuur een bericht. </p>
             </div>
 
             {/* Contact Details */}
@@ -129,51 +128,22 @@ const Contact = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name">Naam *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Je naam"
-                      required
-                    />
+                    <Input id="name" name="name" value={formData.name} onChange={handleInputChange} placeholder="Je naam" required />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">E-mail *</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="je@bedrijf.com"
-                      required
-                    />
+                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="je@bedrijf.com" required />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="company">Bedrijf</Label>
-                  <Input
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleInputChange}
-                    placeholder="Je bedrijf"
-                  />
+                  <Input id="company" name="company" value={formData.company} onChange={handleInputChange} placeholder="Je bedrijf" />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="message">Projectomschrijving *</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Vertel kort over je project, doelen en timing..."
-                    className="min-h-[120px]"
-                    required
-                  />
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Vertel kort over je project, doelen en timing..." className="min-h-[120px]" required />
                 </div>
 
                 <Button type="submit" variant="professional" size="lg" className="w-full">
@@ -184,8 +154,6 @@ const Contact = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
