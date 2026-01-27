@@ -4,11 +4,6 @@ import sammyDeprezImage from "@/assets/sammy-deprez.png";
 import davidDebuckImage from "@/assets/david-debuck.png";
 import hannesDeBackerImage from "@/assets/hannes-de-backer.png";
 
-interface Company {
-  name: string;
-  logo: string;
-}
-
 interface TeamMember {
   name: string;
   role: string;
@@ -17,7 +12,7 @@ interface TeamMember {
   linkedIn?: string;
   website?: string;
   expertise?: string[];
-  companies?: Company[];
+  companies?: string[];
 }
 
 const Team = () => {
@@ -33,11 +28,7 @@ const Team = () => {
         "Procesautomatisatie & interne tools",
         "Brug tussen business, technologie en AI",
       ],
-      companies: [
-        { name: "Cegeka", logo: "https://logo.clearbit.com/cegeka.com" },
-        { name: "NTT", logo: "https://logo.clearbit.com/ntt.com" },
-        { name: "Telenet", logo: "https://logo.clearbit.com/telenet.be" },
-      ],
+      companies: ["Cegeka", "NTT", "Telenet Business"],
     },
     {
       name: "David Debuck",
@@ -47,11 +38,7 @@ const Team = () => {
       image: davidDebuckImage,
       linkedIn: "https://be.linkedin.com/in/zonaut",
       expertise: ["Software architectuur", "Backend & DevOps", "Schaalbare en robuuste systemen"],
-      companies: [
-        { name: "Cegeka", logo: "https://logo.clearbit.com/cegeka.com" },
-        { name: "DHL", logo: "https://logo.clearbit.com/dhl.com" },
-        { name: "Bricsys", logo: "https://logo.clearbit.com/bricsys.com" },
-      ],
+      companies: ["Cegeka", "DHL", "Bricsys"],
     },
     {
       name: "Sammy Deprez",
@@ -66,11 +53,7 @@ const Team = () => {
         "AI-strategie en architectuur",
         "Complexe AI-toepassingen in productie",
       ],
-      companies: [
-        { name: "Microsoft", logo: "https://logo.clearbit.com/microsoft.com" },
-        { name: "Arinti", logo: "https://logo.clearbit.com/arinti.com" },
-        { name: "Wolters Kluwer", logo: "https://logo.clearbit.com/wolterskluwer.com" },
-      ],
+      companies: ["Microsoft", "Arinti", "Wolters Kluwer"],
     },
   ];
 
@@ -137,24 +120,14 @@ const Team = () => {
                 {member.companies && member.companies.length > 0 && (
                   <div className="border-t pt-4">
                     <p className="text-xs text-muted-foreground mb-2 font-medium">Ervaring opgedaan bij:</p>
-                    <div className="flex flex-wrap items-center gap-3">
+                    <div className="flex flex-wrap items-center gap-2">
                       {member.companies.map((company, i) => (
-                        <div
+                        <span
                           key={i}
-                          className="h-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-                          title={company.name}
+                          className="text-xs font-semibold bg-muted text-foreground px-3 py-1.5 rounded-md border border-border/50 hover:border-primary/30 hover:bg-primary/5 transition-colors"
                         >
-                          <img
-                            src={company.logo}
-                            alt={company.name}
-                            className="h-full w-auto object-contain"
-                            onError={(e) => {
-                              const target = e.target as HTMLImageElement;
-                              target.style.display = 'none';
-                              target.parentElement!.innerHTML = `<span class="text-xs text-muted-foreground font-medium">${company.name}</span>`;
-                            }}
-                          />
-                        </div>
+                          {company}
+                        </span>
                       ))}
                     </div>
                   </div>
