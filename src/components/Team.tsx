@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin } from "lucide-react";
+import { Linkedin, Globe } from "lucide-react";
 import sammyDeprezImage from "@/assets/sammy-deprez.png";
 import davidDebuckImage from "@/assets/david-debuck.png";
 import hannesDeBackerImage from "@/assets/hannes-de-backer.png";
@@ -10,6 +10,7 @@ interface TeamMember {
   description: string;
   image: string;
   linkedIn?: string;
+  website?: string;
   achievements?: string[];
 }
 
@@ -21,6 +22,7 @@ const Team = () => {
       description: "Gen AI Solutions Expert met meer dan 10 jaar ervaring in data-driven AI oplossingen voor finance, healthcare en sustainability.",
       image: sammyDeprezImage,
       linkedIn: "https://www.linkedin.com/in/sammydeprez/",
+      website: "https://sammydeprez.com",
       achievements: ["6× Microsoft AI MVP", "LinkedIn Learning Instructor"]
     },
     {
@@ -66,17 +68,30 @@ const Team = () => {
                     <h3 className="text-xl font-semibold">{member.name}</h3>
                     <p className="text-primary font-medium">{member.role}</p>
                   </div>
-                  {member.linkedIn && (
-                    <a
-                      href={member.linkedIn}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-smooth"
-                      aria-label={`${member.name} LinkedIn`}
-                    >
-                      <Linkedin className="h-5 w-5" />
-                    </a>
-                  )}
+                  <div className="flex gap-2">
+                    {member.website && (
+                      <a
+                        href={member.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-smooth"
+                        aria-label={`${member.name} website`}
+                      >
+                        <Globe className="h-5 w-5" />
+                      </a>
+                    )}
+                    {member.linkedIn && (
+                      <a
+                        href={member.linkedIn}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-smooth"
+                        aria-label={`${member.name} LinkedIn`}
+                      >
+                        <Linkedin className="h-5 w-5" />
+                      </a>
+                    )}
+                  </div>
                 </div>
                 
                 {member.achievements && member.achievements.length > 0 && (
