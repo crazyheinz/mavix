@@ -12,9 +12,7 @@ const Hero = () => {
       });
     }
   };
-
-  return (
-    <section id="home" className="pt-32 pb-20 px-4">
+  return <section id="home" className="pt-32 pb-20 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Hero Content */}
         <div className="text-center space-y-8 mb-16">
@@ -79,13 +77,9 @@ const Hero = () => {
         {/* Social Proof */}
         <div className="bg-primary-light/20 rounded-2xl p-8 text-center shadow-soft">
           <p className="text-sm text-muted-foreground mb-2">Onze tech stack</p>
-          <p className="text-base font-medium">
-            React • TypeScript • Node.js • Python • PostgreSQL • AWS • Docker • Kubernetes
-          </p>
+          <p className="text-base font-medium">React • TypeScript • Node.js • Java • PostgreSQL • AWS • Docker • Kubernetes</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
