@@ -20,7 +20,7 @@ const Team = () => {
       name: "Hannes De Backer",
       role: "Founder & Solution Lead",
       description:
-        "Ik begeleid digitale trajecten van idee tot werkende oplossing. Mijn focus ligt op het vertalen van business- en procesnoden naar schaalbare applicaties, waarbij ik instaan voor analyse, oplossingsontwerp en coördinatie van de uitvoering. Ik werk samen met senior developers en AI-specialisten om betrouwbare, toekomstgerichte oplossingen te bouwen die organisaties echt vooruithelpen.",
+        "Specialist in digitale transformatie met een focus op het vertalen van complexe businessbehoeften naar schaalbare applicaties. Hannes wordt ingeschakeld voor de volledige trajectbegeleiding, van initiële analyse tot het finale oplossingsontwerp en de uitvoering. Door een nauwe synergie met senior developers en AI-experts bouwt hij aan toekomstbestendige oplossingen, waarbij hij telkens streeft naar maximale impact en technologische maturiteit.",
       image: hannesDeBackerImage,
       expertise: [
         "Digitale product- en appontwikkeling",
