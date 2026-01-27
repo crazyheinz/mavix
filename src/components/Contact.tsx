@@ -60,8 +60,8 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Laten we praten</h3>
-              <p className="text-muted-foreground leading-relaxed mb-8">Plan een vrijblijvend gesprek of stuur een bericht. </p>
+              
+              
             </div>
 
             {/* Contact Details */}
