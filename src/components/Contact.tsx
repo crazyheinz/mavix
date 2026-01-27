@@ -81,31 +81,11 @@ const Contact = () => {
               </Card>
 
               <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                      <MapPin className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Locatie</h4>
-                      <p className="text-muted-foreground">België (remote-first)</p>
-                    </div>
-                  </div>
-                </CardContent>
+                
               </Card>
 
               <Card className="shadow-soft">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-primary/10 rounded-lg text-primary">
-                      <Clock className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">Responstijd</h4>
-                      <p className="text-muted-foreground">Binnen 24u op werkdagen</p>
-                    </div>
-                  </div>
-                </CardContent>
+                
               </Card>
             </div>
 
@@ -120,37 +100,8 @@ const Contact = () => {
 
           {/* Contact Form */}
           <Card className="shadow-medium">
-            <CardHeader>
-              <CardTitle>Vertel over je project</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Naam *</Label>
-                    <Input id="name" name="name" value={formData.name} onChange={handleInputChange} placeholder="Je naam" required />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">E-mail *</Label>
-                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="je@bedrijf.com" required />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="company">Bedrijf</Label>
-                  <Input id="company" name="company" value={formData.company} onChange={handleInputChange} placeholder="Je bedrijf" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Projectomschrijving *</Label>
-                  <Textarea id="message" name="message" value={formData.message} onChange={handleInputChange} placeholder="Vertel kort over je project, doelen en timing..." className="min-h-[120px]" required />
-                </div>
-
-                <Button type="submit" variant="professional" size="lg" className="w-full">
-                  Verstuur aanvraag
-                </Button>
-              </form>
-            </CardContent>
+            
+            
           </Card>
         </div>
       </div>
