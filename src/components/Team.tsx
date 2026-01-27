@@ -34,9 +34,9 @@ const Team = () => {
         "Brug tussen business, technologie en AI",
       ],
       companies: [
-        { name: "Cegeka", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cegeka_logo.svg/200px-Cegeka_logo.svg.png" },
-        { name: "NTT", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/NTT_company_logo.svg/200px-NTT_company_logo.svg.png" },
-        { name: "Telenet Business", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Telenet_logo.svg/200px-Telenet_logo.svg.png" },
+        { name: "Cegeka", logo: "https://logo.clearbit.com/cegeka.com" },
+        { name: "NTT", logo: "https://logo.clearbit.com/ntt.com" },
+        { name: "Telenet", logo: "https://logo.clearbit.com/telenet.be" },
       ],
     },
     {
@@ -48,9 +48,9 @@ const Team = () => {
       linkedIn: "https://be.linkedin.com/in/zonaut",
       expertise: ["Software architectuur", "Backend & DevOps", "Schaalbare en robuuste systemen"],
       companies: [
-        { name: "Cegeka", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cegeka_logo.svg/200px-Cegeka_logo.svg.png" },
-        { name: "DHL", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/DHL_Logo.svg/200px-DHL_Logo.svg.png" },
-        { name: "Bricsys", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bricsys_logo.svg/200px-Bricsys_logo.svg.png" },
+        { name: "Cegeka", logo: "https://logo.clearbit.com/cegeka.com" },
+        { name: "DHL", logo: "https://logo.clearbit.com/dhl.com" },
+        { name: "Bricsys", logo: "https://logo.clearbit.com/bricsys.com" },
       ],
     },
     {
@@ -67,9 +67,9 @@ const Team = () => {
         "Complexe AI-toepassingen in productie",
       ],
       companies: [
-        { name: "Microsoft", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png" },
-        { name: "Arinti", logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHsJxySJWxzpg/company-logo_200_200/company-logo_200_200/0/1630608498657/arinti_logo?e=2147483647&v=beta&t=gKQ2L_xNhXNxqUn_L8j6p7V_KN0YEP4_8mVFEJ1KMII" },
-        { name: "Wolters Kluwer", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Wolters_Kluwer_Logo.svg/200px-Wolters_Kluwer_Logo.svg.png" },
+        { name: "Microsoft", logo: "https://logo.clearbit.com/microsoft.com" },
+        { name: "Arinti", logo: "https://logo.clearbit.com/arinti.com" },
+        { name: "Wolters Kluwer", logo: "https://logo.clearbit.com/wolterskluwer.com" },
       ],
     },
   ];
