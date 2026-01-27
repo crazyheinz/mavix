@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Clock } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 const Contact = () => {
@@ -81,11 +81,17 @@ const Contact = () => {
               </Card>
 
               <Card className="shadow-soft">
-                
-              </Card>
-
-              <Card className="shadow-soft">
-                
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                      <Phone className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Telefoon</h4>
+                      <p className="text-muted-foreground">+32 474 96 81 38</p>
+                    </div>
+                  </div>
+                </CardContent>
               </Card>
             </div>
 
