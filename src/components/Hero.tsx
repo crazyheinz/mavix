@@ -2,56 +2,36 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Globe, Server, Smartphone, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 import HeroAnimation from "@/components/HeroAnimation";
-
 const Hero = () => {
-  const values = [
-    {
-      title: "Clean Code & Best Practices",
-      description: "Leesbare, testbare en onderhoudbare code volgens gangbare standaarden. Met code reviews, testing en CI/CD als vaste basis."
-    },
-    {
-      title: "Schaalbare Architectuur",
-      description: "Van MVP tot enterprise-grade systemen die meegroeien met je organisatie. Doordachte architectuur, duidelijke verantwoordelijkheden en toekomstvast ontwerp."
-    },
-    {
-      title: "Transparant & Agile",
-      description: "Iteratieve ontwikkeling met wekelijkse demos en duidelijke communicatie. Geen verrassingen, wel voorspelbare oplevering en heldere afspraken."
-    }
-  ];
-
-  const typicalProjects = [
-    "Digitale platformen met meerdere gebruikersrollen en rechten",
-    "Interne tools en backoffice-applicaties",
-    "API-first systemen en complexe integraties",
-    "MVP's die effectief doorgroeien naar productie",
-    "Modernisering van bestaande of legacy-systemen"
-  ];
-
-  const services = [
-    {
-      icon: <Globe className="h-6 w-6" />,
-      title: "Webapplicaties",
-      description: "Moderne, performante webapplicaties op maat van je organisatie."
-    },
-    {
-      icon: <Server className="h-6 w-6" />,
-      title: "API & Backend",
-      description: "Robuuste backend-systemen en API's die veilig en schaalbaar zijn."
-    },
-    {
-      icon: <Smartphone className="h-6 w-6" />,
-      title: "Mobiele applicaties",
-      description: "Cross-platform of native mobiele apps voor iOS en Android."
-    },
-    {
-      icon: <RefreshCw className="h-6 w-6" />,
-      title: "Integraties & Automatisering",
-      description: "Systemen verbinden, processen automatiseren en data betrouwbaar laten stromen."
-    }
-  ];
-
-  return (
-    <section id="home" className="pt-32 pb-20 px-4">
+  const values = [{
+    title: "Clean Code & Best Practices",
+    description: "Leesbare, testbare en onderhoudbare code volgens gangbare standaarden. Met code reviews, testing en CI/CD als vaste basis."
+  }, {
+    title: "Schaalbare Architectuur",
+    description: "Van MVP tot enterprise-grade systemen die meegroeien met je organisatie. Doordachte architectuur, duidelijke verantwoordelijkheden en toekomstvast ontwerp."
+  }, {
+    title: "Transparant & Agile",
+    description: "Iteratieve ontwikkeling met wekelijkse demos en duidelijke communicatie. Geen verrassingen, wel voorspelbare oplevering en heldere afspraken."
+  }];
+  const typicalProjects = ["Digitale platformen met meerdere gebruikersrollen en rechten", "Interne tools en backoffice-applicaties", "API-first systemen en complexe integraties", "MVP's die effectief doorgroeien naar productie", "Modernisering van bestaande of legacy-systemen"];
+  const services = [{
+    icon: <Globe className="h-6 w-6" />,
+    title: "Webapplicaties",
+    description: "Moderne, performante webapplicaties op maat van je organisatie."
+  }, {
+    icon: <Server className="h-6 w-6" />,
+    title: "API & Backend",
+    description: "Robuuste backend-systemen en API's die veilig en schaalbaar zijn."
+  }, {
+    icon: <Smartphone className="h-6 w-6" />,
+    title: "Mobiele applicaties",
+    description: "Cross-platform of native mobiele apps voor iOS en Android."
+  }, {
+    icon: <RefreshCw className="h-6 w-6" />,
+    title: "Integraties & Automatisering",
+    description: "Systemen verbinden, processen automatiseren en data betrouwbaar laten stromen."
+  }];
+  return <section id="home" className="pt-32 pb-20 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Hero Content */}
         <div className="text-center space-y-8 mb-16">
@@ -81,15 +61,13 @@ const Hero = () => {
         <div className="mb-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Waar we voor staan</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-10">
-            {values.map((value, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-gradient-card rounded-xl shadow-soft">
+            {values.map((value, index) => <div key={index} className="flex items-start space-x-4 p-6 bg-gradient-card rounded-xl shadow-soft">
                 <CheckCircle className="h-6 w-6 text-success mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold mb-2">{value.title}</h3>
                   <p className="text-sm text-muted-foreground">{value.description}</p>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
           <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-4xl mx-auto">
             Mavix ontwikkelt maatwerksoftware voor organisaties met echte complexiteit.
@@ -102,34 +80,15 @@ const Hero = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Typische projecten</h2>
           <p className="text-center text-muted-foreground mb-8">Wij werken onder andere aan:</p>
           <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {typicalProjects.map((project, index) => (
-              <div key={index} className="flex items-start space-x-3">
+            {typicalProjects.map((project, index) => <div key={index} className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-foreground">{project}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
 
         {/* Services Summary */}
-        <div className="mb-20">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Diensten</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <Link 
-                key={index} 
-                to="/diensten"
-                className="p-6 bg-gradient-card rounded-xl shadow-soft hover:shadow-medium transition-spring group"
-              >
-                <div className="p-3 bg-primary/10 rounded-lg text-primary w-fit mb-4 group-hover:bg-primary/20 transition-smooth">
-                  {service.icon}
-                </div>
-                <h3 className="font-semibold mb-2">{service.title}</h3>
-                <p className="text-sm text-muted-foreground">{service.description}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Collaboration Section */}
         <div className="mb-20 text-center max-w-3xl mx-auto">
@@ -158,8 +117,6 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
