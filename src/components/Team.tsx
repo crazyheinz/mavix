@@ -4,6 +4,11 @@ import sammyDeprezImage from "@/assets/sammy-deprez.png";
 import davidDebuckImage from "@/assets/david-debuck.png";
 import hannesDeBackerImage from "@/assets/hannes-de-backer.png";
 
+interface Company {
+  name: string;
+  logo: string;
+}
+
 interface TeamMember {
   name: string;
   role: string;
@@ -12,6 +17,7 @@ interface TeamMember {
   linkedIn?: string;
   website?: string;
   expertise?: string[];
+  companies?: Company[];
 }
 
 const Team = () => {
@@ -27,6 +33,11 @@ const Team = () => {
         "Procesautomatisatie & interne tools",
         "Brug tussen business, technologie en AI",
       ],
+      companies: [
+        { name: "Cegeka", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cegeka_logo.svg/200px-Cegeka_logo.svg.png" },
+        { name: "NTT", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/NTT_company_logo.svg/200px-NTT_company_logo.svg.png" },
+        { name: "Telenet Business", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Telenet_logo.svg/200px-Telenet_logo.svg.png" },
+      ],
     },
     {
       name: "David Debuck",
@@ -36,6 +47,11 @@ const Team = () => {
       image: davidDebuckImage,
       linkedIn: "https://be.linkedin.com/in/zonaut",
       expertise: ["Software architectuur", "Backend & DevOps", "Schaalbare en robuuste systemen"],
+      companies: [
+        { name: "Cegeka", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Cegeka_logo.svg/200px-Cegeka_logo.svg.png" },
+        { name: "DHL", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/DHL_Logo.svg/200px-DHL_Logo.svg.png" },
+        { name: "Bricsys", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bricsys_logo.svg/200px-Bricsys_logo.svg.png" },
+      ],
     },
     {
       name: "Sammy Deprez",
@@ -49,6 +65,11 @@ const Team = () => {
         "Generative AI & data-driven oplossingen",
         "AI-strategie en architectuur",
         "Complexe AI-toepassingen in productie",
+      ],
+      companies: [
+        { name: "Microsoft", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/200px-Microsoft_logo.svg.png" },
+        { name: "Arinti", logo: "https://media.licdn.com/dms/image/v2/C4E0BAQHsJxySJWxzpg/company-logo_200_200/company-logo_200_200/0/1630608498657/arinti_logo?e=2147483647&v=beta&t=gKQ2L_xNhXNxqUn_L8j6p7V_KN0YEP4_8mVFEJ1KMII" },
+        { name: "Wolters Kluwer", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Wolters_Kluwer_Logo.svg/200px-Wolters_Kluwer_Logo.svg.png" },
       ],
     },
   ];
@@ -111,7 +132,33 @@ const Team = () => {
                   </div>
                 )}
 
-                <p className="text-sm text-muted-foreground">{member.description}</p>
+                <p className="text-sm text-muted-foreground mb-4">{member.description}</p>
+
+                {member.companies && member.companies.length > 0 && (
+                  <div className="border-t pt-4">
+                    <p className="text-xs text-muted-foreground mb-2 font-medium">Ervaring opgedaan bij:</p>
+                    <div className="flex flex-wrap items-center gap-3">
+                      {member.companies.map((company, i) => (
+                        <div
+                          key={i}
+                          className="h-6 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                          title={company.name}
+                        >
+                          <img
+                            src={company.logo}
+                            alt={company.name}
+                            className="h-full w-auto object-contain"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                              target.parentElement!.innerHTML = `<span class="text-xs text-muted-foreground font-medium">${company.name}</span>`;
+                            }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
