@@ -17,6 +17,13 @@ interface TeamMember {
 const Team = () => {
   const teamMembers: TeamMember[] = [
     {
+      name: "Hannes De Backer",
+      role: "IT Generalist & Developer",
+      description: "Ik ontwerp en bouw digitale oplossingen die processen vereenvoudigen, data betrouwbaar maken en organisaties vooruithelpen.",
+      image: hannesDeBackerImage,
+      achievements: ["10+ jaar ervaring", "Cegeka", "NTT", "Telenet Business"]
+    },
+    {
       name: "Sammy Deprez",
       role: "AI Solution Architect",
       description: "Gen AI Solutions Expert met meer dan 10 jaar ervaring in data-driven AI oplossingen voor finance, healthcare en sustainability.",
@@ -32,13 +39,6 @@ const Team = () => {
       image: davidDebuckImage,
       linkedIn: "https://be.linkedin.com/in/zonaut",
       achievements: ["10+ jaar ervaring", "Software Architect"]
-    },
-    {
-      name: "Hannes De Backer",
-      role: "IT Generalist & Developer",
-      description: "Ik ontwerp en bouw digitale oplossingen die processen vereenvoudigen, data betrouwbaar maken en organisaties vooruithelpen.",
-      image: hannesDeBackerImage,
-      achievements: ["10+ jaar ervaring", "Cegeka", "NTT", "Telenet Business"]
     }
   ];
 
