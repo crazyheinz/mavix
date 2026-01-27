@@ -73,14 +73,6 @@ const Hero = () => {
           </Button>
         </div>
 
-        {/* Intro Section */}
-        <div className="text-center mb-16 max-w-4xl mx-auto">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Mavix ontwikkelt maatwerksoftware voor organisaties met echte complexiteit.
-            Wij combineren technische expertise met een pragmatische aanpak, en bouwen systemen die vandaag werken én morgen onderhouden kunnen worden.
-          </p>
-        </div>
-
         {/* Hero Image */}
         <div className="mb-16">
           <div className="relative rounded-2xl overflow-hidden shadow-large">
@@ -92,7 +84,7 @@ const Hero = () => {
         {/* Values Section */}
         <div className="mb-20">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">Waar we voor staan</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-10">
             {values.map((value, index) => (
               <div key={index} className="flex items-start space-x-4 p-6 bg-gradient-card rounded-xl shadow-soft">
                 <CheckCircle className="h-6 w-6 text-success mt-1 flex-shrink-0" />
@@ -103,6 +95,10 @@ const Hero = () => {
               </div>
             ))}
           </div>
+          <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-4xl mx-auto">
+            Mavix ontwikkelt maatwerksoftware voor organisaties met echte complexiteit.
+            Wij combineren technische expertise met een pragmatische aanpak, en bouwen systemen die vandaag werken én morgen onderhouden kunnen worden.
+          </p>
         </div>
 
         {/* Typical Projects */}
