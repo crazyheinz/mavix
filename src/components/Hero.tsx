@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Globe, Server, Smartphone, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 import HeroAnimation from "@/components/HeroAnimation";
+
 const Hero = () => {
   const values = [
     {
