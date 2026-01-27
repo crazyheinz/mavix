@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Clock } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground py-16 px-4">
+  return <footer className="bg-primary text-primary-foreground py-16 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -20,42 +18,27 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Navigatie</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="/"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-                >
+                <Link to="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/diensten"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-                >
+                <Link to="/diensten" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Diensten
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/team"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-                >
+                <Link to="/team" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Team
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/werkwijze"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-                >
+                <Link to="/werkwijze" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Werkwijze
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-                >
+                <Link to="/contact" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Contact
                 </Link>
               </li>
@@ -78,16 +61,12 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a 
-                  href="mailto:hello@mavix.be" 
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth flex items-center gap-2"
-                >
+                <a href="mailto:hello@mavix.be" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth flex items-center gap-2">
                   <Mail className="h-4 w-4" />
                   hello@mavix.be
                 </a>
               </li>
-              <li className="text-primary-foreground/80 flex items-center gap-2">
-                <MapPin className="h-4 w-4" />
+              <li className="text-primary-foreground/80 flex items-center gap-2">België <MapPin className="h-4 w-4" />
                 België (remote-first)
               </li>
               <li className="text-primary-foreground/80 flex items-center gap-2">
@@ -104,8 +83,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
