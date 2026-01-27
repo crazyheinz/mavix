@@ -104,11 +104,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <Card className="shadow-medium">
-            
-            
-          </Card>
         </div>
       </div>
     </section>;
