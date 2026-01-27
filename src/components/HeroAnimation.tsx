@@ -14,7 +14,7 @@ const HeroAnimation = () => {
       {terms.map((term, i) => (
         <motion.div
           key={term.text}
-          className="absolute text-sm md:text-base font-medium text-primary/70 whitespace-nowrap"
+          className="absolute text-base md:text-xl font-semibold text-primary whitespace-nowrap drop-shadow-md"
           style={{
             top: `${50 + Math.sin(term.angle * (Math.PI / 180)) * 38}%`,
             left: `${50 + Math.cos(term.angle * (Math.PI / 180)) * 38}%`,
