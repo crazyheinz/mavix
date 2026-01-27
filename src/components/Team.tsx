@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
 import davidDebuckImage from "@/assets/david-debuck.png";
+import hannesDeBackerImage from "@/assets/hannes-de-backer.png";
 
 interface TeamMember {
   name: string;
@@ -28,6 +29,13 @@ const Team = () => {
       image: davidDebuckImage,
       linkedIn: "https://be.linkedin.com/in/zonaut",
       achievements: ["10+ jaar ervaring", "Software Architect"]
+    },
+    {
+      name: "Hannes De Backer",
+      role: "IT Generalist & Developer",
+      description: "Ik ontwerp en bouw digitale oplossingen die processen vereenvoudigen, data betrouwbaar maken en organisaties vooruithelpen.",
+      image: hannesDeBackerImage,
+      achievements: ["10+ jaar ervaring", "Cegeka", "NTT", "Telenet Business"]
     }
   ];
 
