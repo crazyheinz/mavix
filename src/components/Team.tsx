@@ -19,27 +19,38 @@ const Team = () => {
     {
       name: "Hannes De Backer",
       role: "Founder & Solution Lead",
-      description: "Ik begeleid digitale trajecten van idee tot werkende oplossing. Mijn focus ligt op het vertalen van business- en procesnoden naar schaalbare applicaties, waarbij ik instaan voor analyse, oplossingsontwerp en coördinatie van de uitvoering. Ik werk samen met senior developers en AI-specialisten om betrouwbare, toekomstgerichte oplossingen te bouwen die organisaties echt vooruithelpen.",
+      description:
+        "Ik begeleid digitale trajecten van idee tot werkende oplossing. Mijn focus ligt op het vertalen van business- en procesnoden naar schaalbare applicaties, waarbij ik instaan voor analyse, oplossingsontwerp en coördinatie van de uitvoering. Ik werk samen met senior developers en AI-specialisten om betrouwbare, toekomstgerichte oplossingen te bouwen die organisaties echt vooruithelpen.",
       image: hannesDeBackerImage,
-      expertise: ["Digitale product- en appontwikkeling", "Procesautomatisatie & interne tools", "Brug tussen business, technologie en AI"]
+      expertise: [
+        "Digitale product- en appontwikkeling",
+        "Procesautomatisatie & interne tools",
+        "Brug tussen business, technologie en AI",
+      ],
     },
     {
       name: "David Debuck",
-      role: "Senior Software Architect (Partner)",
-      description: "Senior software engineer en architect met meer dan 10 jaar ervaring in backend development en DevOps. David ondersteunt projecten op architectuurniveau en waakt over codekwaliteit, schaalbaarheid en technische keuzes. Hij heeft ervaring in complexe omgevingen bij onder andere grote ondernemingen en brengt die maturiteit mee in elk project.",
+      role: "Senior Software Architect (Associate)",
+      description:
+        "Senior software engineer en architect met meer dan 10 jaar ervaring in backend development en DevOps. David ondersteunt projecten op architectuurniveau en waakt over codekwaliteit, schaalbaarheid en technische keuzes. Hij heeft ervaring in complexe omgevingen bij onder andere grote ondernemingen en brengt die maturiteit mee in elk project.",
       image: davidDebuckImage,
       linkedIn: "https://be.linkedin.com/in/zonaut",
-      expertise: ["Software architectuur", "Backend & DevOps", "Schaalbare en robuuste systemen"]
+      expertise: ["Software architectuur", "Backend & DevOps", "Schaalbare en robuuste systemen"],
     },
     {
       name: "Sammy Deprez",
       role: "AI Solution Architect (Associate)",
-      description: "AI-specialist met uitgebreide ervaring in data-gedreven en generatieve AI-oplossingen. Sammy wordt ingeschakeld voor AI-strategie, modelkeuze en implementatie van intelligente toepassingen, telkens met oog voor haalbaarheid en impact. Hij combineert technische diepgang met strategisch inzicht en ondersteunt projecten waar AI een echte meerwaarde biedt.",
+      description:
+        "AI-specialist met uitgebreide ervaring in data-gedreven en generatieve AI-oplossingen. Sammy wordt ingeschakeld voor AI-strategie, modelkeuze en implementatie van intelligente toepassingen, telkens met oog voor haalbaarheid en impact. Hij combineert technische diepgang met strategisch inzicht en ondersteunt projecten waar AI een echte meerwaarde biedt.",
       image: sammyDeprezImage,
       linkedIn: "https://www.linkedin.com/in/sammydeprez/",
       website: "https://sammydeprez.com",
-      expertise: ["Generative AI & data-driven oplossingen", "AI-strategie en architectuur", "Complexe AI-toepassingen in productie"]
-    }
+      expertise: [
+        "Generative AI & data-driven oplossingen",
+        "AI-strategie en architectuur",
+        "Complexe AI-toepassingen in productie",
+      ],
+    },
   ];
 
   return (
@@ -56,11 +67,7 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth overflow-hidden">
               <div className="aspect-square overflow-hidden bg-muted">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover object-center"
-                />
+                <img src={member.image} alt={member.name} className="w-full h-full object-cover object-center" />
               </div>
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-2">
@@ -93,20 +100,17 @@ const Team = () => {
                     )}
                   </div>
                 </div>
-                
+
                 {member.expertise && member.expertise.length > 0 && (
                   <div className="flex flex-wrap gap-2 mb-3">
                     {member.expertise.map((item, i) => (
-                      <span
-                        key={i}
-                        className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full"
-                      >
+                      <span key={i} className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
                         {item}
                       </span>
                     ))}
                   </div>
                 )}
-                
+
                 <p className="text-sm text-muted-foreground">{member.description}</p>
               </CardContent>
             </Card>
