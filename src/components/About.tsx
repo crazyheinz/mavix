@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Zap, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const values = [
@@ -20,13 +21,6 @@ const About = () => {
       description: "Geen account managers, je praat direct met de developers."
     }
   ];
-
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section id="over" className="py-20 px-4 bg-muted/30">
@@ -53,8 +47,8 @@ const About = () => {
               </p>
             </div>
 
-            <Button onClick={scrollToContact} variant="professional" size="lg">
-              Plan een gesprek
+            <Button asChild variant="professional" size="lg">
+              <Link to="/contact">Plan een gesprek</Link>
             </Button>
           </div>
 

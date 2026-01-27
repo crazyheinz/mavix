@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Globe, Server, Smartphone, Cog } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -58,13 +59,6 @@ const Services = () => {
     }
   ];
 
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="diensten" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
@@ -101,8 +95,8 @@ const Services = () => {
                 </ul>
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-semibold text-primary">{service.price}</span>
-                  <Button onClick={scrollToContact} variant="outline" size="sm">
-                    Meer info
+                  <Button asChild variant="outline" size="sm">
+                    <Link to="/contact">Meer info</Link>
                   </Button>
                 </div>
               </CardContent>
@@ -111,8 +105,8 @@ const Services = () => {
         </div>
 
         <div className="text-center">
-          <Button onClick={scrollToContact} variant="professional" size="lg">
-            Bespreek je project
+          <Button asChild variant="professional" size="lg">
+            <Link to="/contact">Bespreek je project</Link>
           </Button>
         </div>
       </div>

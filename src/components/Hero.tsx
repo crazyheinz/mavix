@@ -1,18 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 // Backup image available at: @/assets/hero-image-backup.jpg
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  };
-  return <section id="home" className="pt-32 pb-20 px-4">
+  return (
+    <section id="home" className="pt-32 pb-20 px-4">
       <div className="container mx-auto max-w-6xl">
         {/* Hero Content */}
         <div className="text-center space-y-8 mb-16">
@@ -28,8 +22,8 @@ const Hero = () => {
             </p>
           </div>
 
-          <Button onClick={scrollToContact} variant="hero" size="xl" className="shadow-large hover:shadow-glow">
-            Start je project
+          <Button asChild variant="hero" size="xl" className="shadow-large hover:shadow-glow">
+            <Link to="/contact">Start je project</Link>
           </Button>
         </div>
 
@@ -80,6 +74,8 @@ const Hero = () => {
           <p className="text-base font-medium">React • TypeScript • Node.js • Java • PostgreSQL • AWS • Docker • Kubernetes</p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
