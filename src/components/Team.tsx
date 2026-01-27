@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
+import davidDebuckImage from "@/assets/david-debuck.png";
 
 interface TeamMember {
   name: string;
@@ -19,6 +20,14 @@ const Team = () => {
       image: "https://sammydeprez.com/assets/profile-D2874KnS.png",
       linkedIn: "https://www.linkedin.com/in/sammydeprez/",
       achievements: ["6× Microsoft AI MVP", "LinkedIn Learning Instructor"]
+    },
+    {
+      name: "David Debuck",
+      role: "Java DevOps Engineer",
+      description: "Senior Software Engineer met meer dan 10 jaar ervaring in Java development en DevOps. Expertise in software architectuur bij bedrijven als DHL, Cegeka en Bricsys.",
+      image: davidDebuckImage,
+      linkedIn: "https://be.linkedin.com/in/zonaut",
+      achievements: ["10+ jaar ervaring", "Software Architect"]
     }
   ];
 
