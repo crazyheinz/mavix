@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Globe, Server, Smartphone, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
-// Backup image available at: @/assets/hero-image-backup.jpg
-
+import HeroAnimation from "@/components/HeroAnimation";
 const Hero = () => {
   const values = [
     {
@@ -73,12 +71,9 @@ const Hero = () => {
           </Button>
         </div>
 
-        {/* Hero Image */}
-        <div className="mb-16">
-          <div className="relative rounded-2xl overflow-hidden shadow-large">
-            <img src={heroImage} alt="Software development team collaborating on code" className="w-full h-64 md:h-96 object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-          </div>
+        {/* Hero Animation */}
+        <div className="mb-16 relative h-64 md:h-96">
+          <HeroAnimation />
         </div>
 
         {/* Values Section */}
