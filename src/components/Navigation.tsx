@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const location = useLocation();
+  
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50 border-b border-border">
@@ -14,41 +12,55 @@ const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">Mavix</h1>
+            <Link to="/" className="text-2xl font-bold text-primary">
+              Mavix
+            </Link>
           </div>
 
           {/* Navigation Links */}
           <div className="flex items-center space-x-6 md:space-x-12">
-            <button
-              onClick={() => scrollToSection('home')}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
+            <Link
+              to="/"
+              className={`text-sm font-medium transition-smooth ${
+                isActive('/') ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
             >
               Home
-            </button>
-            <button
-              onClick={() => scrollToSection('diensten')}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
+            </Link>
+            <Link
+              to="/diensten"
+              className={`text-sm font-medium transition-smooth ${
+                isActive('/diensten') ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
             >
               Diensten
-            </button>
-            <button
-              onClick={() => scrollToSection('werkwijze')}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
+            </Link>
+            <Link
+              to="/team"
+              className={`text-sm font-medium transition-smooth ${
+                isActive('/team') ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
+            >
+              Team
+            </Link>
+            <Link
+              to="/werkwijze"
+              className={`text-sm font-medium transition-smooth ${
+                isActive('/werkwijze') ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
             >
               Werkwijze
-            </button>
-            <button
-              onClick={() => scrollToSection('over')}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-smooth"
+            </Link>
+            <Link
+              to="/over"
+              className={`text-sm font-medium transition-smooth ${
+                isActive('/over') ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+              }`}
             >
               Over
-            </button>
-            <Button
-              onClick={() => scrollToSection('contact')}
-              variant="professional"
-              size="sm"
-            >
-              Contact
+            </Link>
+            <Button asChild variant="professional" size="sm">
+              <Link to="/contact">Contact</Link>
             </Button>
           </div>
 
