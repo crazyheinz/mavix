@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin } from "lucide-react";
+import sammyDeprezImage from "@/assets/sammy-deprez.png";
 import davidDebuckImage from "@/assets/david-debuck.png";
 import hannesDeBackerImage from "@/assets/hannes-de-backer.png";
 
@@ -18,7 +19,7 @@ const Team = () => {
       name: "Sammy Deprez",
       role: "AI Solution Architect",
       description: "Gen AI Solutions Expert met meer dan 10 jaar ervaring in data-driven AI oplossingen voor finance, healthcare en sustainability.",
-      image: "https://sammydeprez.com/assets/profile-D2874KnS.png",
+      image: sammyDeprezImage,
       linkedIn: "https://www.linkedin.com/in/sammydeprez/",
       achievements: ["6× Microsoft AI MVP", "LinkedIn Learning Instructor"]
     },
