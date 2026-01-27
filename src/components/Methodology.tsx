@@ -1,102 +1,53 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Search, Layers, FileCode, Code, TestTube, Rocket } from "lucide-react";
-
 const Methodology = () => {
   const steps = [
-    {
-      icon: <Search className="h-8 w-8" />,
-      number: "1",
-      title: "Discovery",
-      description: "We analyseren je requirements, bestaande systemen en doelen. We stellen de juiste vragen om scope en prioriteiten helder te krijgen."
-    },
-    {
-      icon: <Layers className="h-8 w-8" />,
-      number: "2", 
-      title: "Architectuur",
-      description: "We ontwerpen een schaalbare technische architectuur. Database models, API design en infrastructure als solide fundament."
-    },
-    {
-      icon: <FileCode className="h-8 w-8" />,
-      number: "3",
-      title: "Planning", 
-      description: "User stories, sprint planning en een realistische roadmap. Geen verrassingen, wel duidelijke milestones."
-    },
-    {
-      icon: <Code className="h-8 w-8" />,
-      number: "4",
-      title: "Development",
-      description: "Agile sprints met wekelijkse demos. Clean code, code reviews en continuous integration vanaf dag één."
-    },
-    {
-      icon: <TestTube className="h-8 w-8" />,
-      number: "5", 
-      title: "Testing & QA",
-      description: "Unit tests, integration tests en end-to-end testing. Security audits en performance optimalisatie."
-    },
-    {
-      icon: <Rocket className="h-8 w-8" />,
-      number: "6", 
-      title: "Deployment & Support",
-      description: "CI/CD pipelines, monitoring en onderhoud. We blijven beschikbaar voor bugfixes, updates en nieuwe features."
-    }
+    { number: "1", title: "Discovery", description: "Analyseren van requirements, bestaande systemen en doelen." },
+    { number: "2", title: "Architectuur", description: "Ontwerpen van schaalbare technische architectuur en database models." },
+    { number: "3", title: "Planning", description: "User stories, sprint planning en een realistische roadmap." },
+    { number: "4", title: "Development", description: "Agile sprints met wekelijkse demos en clean code." },
+    { number: "5", title: "Schalen", description: "Verankeren wat werkt in teams en processen, verbreden en borgen." },
+    { number: "6", title: "Deployment", description: "CI/CD pipelines, monitoring en doorlopend onderhoud." }
   ];
 
-  const tools = [
-    "React",
-    "TypeScript", 
-    "Node.js",
-    "PostgreSQL",
-    "Docker",
-    "AWS"
-  ];
+  const tools = ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker", "AWS"];
 
   return (
     <section id="werkwijze" className="py-20 px-4">
-      <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+      <div className="container mx-auto max-w-4xl">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Werkwijze</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground">
             Van idee naar productie - een bewezen development proces
           </p>
         </div>
 
-        {/* Process Steps */}
-        <div className="space-y-8 mb-16">
-          {steps.map((step, index) => (
-            <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth">
-              <CardContent className="p-8">
-                <div className="flex items-start space-x-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center text-primary-foreground mb-4">
-                      {step.icon}
-                    </div>
-                    <div className="text-center">
-                      <span className="text-2xl font-bold text-primary">{step.number}</span>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3">{step.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
-                  </div>
+        {/* Process Steps - Compact inline style */}
+        <div className="mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            {steps.map((step, index) => (
+              <div key={index} className="text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-primary text-primary-foreground rounded-full font-bold text-sm mb-3">
+                  {step.number}
                 </div>
-              </CardContent>
-            </Card>
-          ))}
+                <h3 className="font-semibold mb-1">{step.title}</h3>
+                <p className="text-sm text-muted-foreground">{step.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Methodology Highlight */}
-        <div className="bg-gradient-subtle rounded-2xl p-8 text-center shadow-soft">
-          <h3 className="text-2xl font-bold mb-4">Waarom met ons werken?</h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
-            Ervaren developers die weten wat ze doen. Geen juniors die leren op jouw project. 
-            Directe communicatie, snelle iteraties en software die echt werkt.
+        <div className="bg-gradient-subtle rounded-2xl p-8 text-center shadow-soft mb-12">
+          <h3 className="text-xl font-bold mb-3">Slimmer vernieuwen, sneller leren</h3>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Veel organisaties willen vernieuwen, maar weten niet waar te beginnen. 
+            Mavix helpt om kansen scherp te stellen en ideeën om te zetten in haalbare, meetbare oplossingen.
           </p>
         </div>
 
         {/* Tools */}
-        <div className="mt-16">
-          <h3 className="text-xl font-semibold text-center mb-8">Tech Stack</h3>
-          <div className="flex flex-wrap justify-center gap-4">
+        <div className="text-center">
+          <h3 className="text-lg font-semibold mb-4">Tech Stack</h3>
+          <div className="flex flex-wrap justify-center gap-3">
             {tools.map((tool, index) => (
               <span 
                 key={index}
