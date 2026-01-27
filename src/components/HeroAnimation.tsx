@@ -1,8 +1,41 @@
 import { motion } from "framer-motion";
 
 const HeroAnimation = () => {
+  const terms = [
+    { text: "Clean architecture", angle: 45 },
+    { text: "Scalable systems", angle: 135 },
+    { text: "Production-ready software", angle: 225 },
+    { text: "Built to last", angle: 315 },
+  ];
+
   return (
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+      {/* Floating terms */}
+      {terms.map((term, i) => (
+        <motion.div
+          key={term.text}
+          className="absolute text-sm md:text-base font-medium text-primary/70 whitespace-nowrap"
+          style={{
+            top: `${50 + Math.sin(term.angle * (Math.PI / 180)) * 38}%`,
+            left: `${50 + Math.cos(term.angle * (Math.PI / 180)) * 38}%`,
+            translateX: "-50%",
+            translateY: "-50%",
+          }}
+          animate={{
+            y: [0, -10, 0],
+            opacity: [0.5, 0.9, 0.5],
+          }}
+          transition={{
+            duration: 4 + i * 0.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: i * 0.8,
+          }}
+        >
+          {term.text}
+        </motion.div>
+      ))}
+
       {/* Main floating blob */}
       <motion.div
         className="relative w-[500px] h-[500px] md:w-[700px] md:h-[700px]"
