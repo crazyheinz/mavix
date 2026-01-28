@@ -10,8 +10,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <h3 className="text-2xl font-bold mb-4">Mavix</h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Custom Software Development.
-              Van webapps tot API's en mobiele oplossingen.
+              Custom Software Development. Van webapps tot API's en mobiele oplossingen.
             </p>
           </div>
 
@@ -20,10 +19,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Navigatie</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link
-                  to="/"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-                >
+                <Link to="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Home
                 </Link>
               </li>
@@ -36,10 +32,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/team"
-                  className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
-                >
+                <Link to="/team" className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth">
                   Team
                 </Link>
               </li>
@@ -78,8 +71,8 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a 
-                  href="mailto:hello@mavix.be" 
+                <a
+                  href="mailto:hello@mavix.be"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth flex items-center gap-2"
                 >
                   <Mail className="h-4 w-4" />
@@ -88,7 +81,7 @@ const Footer = () => {
               </li>
               <li className="text-primary-foreground/80 flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                België (remote-first)
+                België
               </li>
               <li className="text-primary-foreground/80 flex items-center gap-2">
                 <Clock className="h-4 w-4" />
