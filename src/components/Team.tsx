@@ -30,31 +30,32 @@ const Team = () => {
       ],
       companies: ["Cegeka", "NTT", "Telenet Business"],
     },
-    {
-      name: "David Debuck",
-      role: "Senior Software Architect (Associate)",
-      description:
-        "Senior software engineer en architect met meer dan 10 jaar ervaring in backend development en DevOps. David ondersteunt projecten op architectuurniveau en waakt over codekwaliteit, schaalbaarheid en technische keuzes. Hij heeft ervaring in complexe omgevingen bij onder andere grote ondernemingen en brengt die maturiteit mee in elk project.",
-      image: davidDebuckImage,
-      linkedIn: "https://be.linkedin.com/in/zonaut",
-      expertise: ["Software architectuur", "Backend & DevOps", "Schaalbare en robuuste systemen"],
-      companies: ["Cegeka", "DHL", "Bricsys"],
-    },
-    {
-      name: "Sammy Deprez",
-      role: "AI Solution Architect (Associate)",
-      description:
-        "AI-specialist met uitgebreide ervaring in data-gedreven en generatieve AI-oplossingen. Sammy wordt ingeschakeld voor AI-strategie, modelkeuze en implementatie van intelligente toepassingen, telkens met oog voor haalbaarheid en impact. Hij combineert technische diepgang met strategisch inzicht en ondersteunt projecten waar AI een echte meerwaarde biedt.",
-      image: sammyDeprezImage,
-      linkedIn: "https://www.linkedin.com/in/sammydeprez/",
-      website: "https://sammydeprez.com",
-      expertise: [
-        "Generative AI & data-driven oplossingen",
-        "AI-strategie en architectuur",
-        "Complexe AI-toepassingen in productie",
-      ],
-      companies: ["Microsoft", "Arinti", "Wolters Kluwer"],
-    },
+    // NOTE: Temporarily hidden - can be re-enabled later
+    // {
+    //   name: "David Debuck",
+    //   role: "Senior Software Architect (Associate)",
+    //   description:
+    //     "Senior software engineer en architect met meer dan 10 jaar ervaring in backend development en DevOps. David ondersteunt projecten op architectuurniveau en waakt over codekwaliteit, schaalbaarheid en technische keuzes. Hij heeft ervaring in complexe omgevingen bij onder andere grote ondernemingen en brengt die maturiteit mee in elk project.",
+    //   image: davidDebuckImage,
+    //   linkedIn: "https://be.linkedin.com/in/zonaut",
+    //   expertise: ["Software architectuur", "Backend & DevOps", "Schaalbare en robuuste systemen"],
+    //   companies: ["Cegeka", "DHL", "Bricsys"],
+    // },
+    // {
+    //   name: "Sammy Deprez",
+    //   role: "AI Solution Architect (Associate)",
+    //   description:
+    //     "AI-specialist met uitgebreide ervaring in data-gedreven en generatieve AI-oplossingen. Sammy wordt ingeschakeld voor AI-strategie, modelkeuze en implementatie van intelligente toepassingen, telkens met oog voor haalbaarheid en impact. Hij combineert technische diepgang met strategisch inzicht en ondersteunt projecten waar AI een echte meerwaarde biedt.",
+    //   image: sammyDeprezImage,
+    //   linkedIn: "https://www.linkedin.com/in/sammydeprez/",
+    //   website: "https://sammydeprez.com",
+    //   expertise: [
+    //     "Generative AI & data-driven oplossingen",
+    //     "AI-strategie en architectuur",
+    //     "Complexe AI-toepassingen in productie",
+    //   ],
+    //   companies: ["Microsoft", "Arinti", "Wolters Kluwer"],
+    // },
   ];
 
   return (
