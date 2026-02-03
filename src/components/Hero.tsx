@@ -70,7 +70,7 @@ const Hero = () => {
               </div>)}
           </div>
           <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-4xl mx-auto">
-            Appnest ontwikkelt maatwerksoftware voor organisaties met echte complexiteit.
+            Mavix ontwikkelt maatwerksoftware voor organisaties met echte complexiteit.
             Wij combineren technische expertise met een pragmatische aanpak, en bouwen systemen die vandaag werken én morgen onderhouden kunnen worden.
           </p>
         </div>
