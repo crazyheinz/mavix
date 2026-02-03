@@ -40,7 +40,7 @@ const Methodology = () => {
           <h3 className="text-xl font-bold mb-3">Slimmer vernieuwen, sneller leren</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Veel organisaties willen vernieuwen, maar weten niet waar te beginnen. 
-            Appnest helpt om kansen scherp te stellen en ideeën om te zetten in haalbare, meetbare oplossingen.
+            Mavix helpt om kansen scherp te stellen en ideeën om te zetten in haalbare, meetbare oplossingen.
           </p>
         </div>
 
