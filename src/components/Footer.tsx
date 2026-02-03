@@ -90,6 +90,9 @@ const Footer = () => {
                 <Clock className="h-4 w-4" />
                 Snelle en directe communicatie
               </li>
+              <li className="text-primary-foreground/80 text-xs mt-2">
+                BTW: BE07906365904
+              </li>
             </ul>
           </div>
         </div>
