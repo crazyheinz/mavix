@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <h3 className="text-2xl font-bold mb-4">Mavix</h3>
+            <h3 className="text-2xl font-bold mb-4">Appnest</h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Custom Software Development. Van webapps tot API's en mobiele oplossingen.
             </p>
@@ -72,11 +72,11 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:hello@mavix.be"
+                  href="mailto:hello@appnest.be"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-smooth flex items-center gap-2"
                 >
                   <Mail className="h-4 w-4" />
-                  hello@mavix.be
+                  hello@appnest.be
                 </a>
               </li>
               <li className="text-primary-foreground/80 flex items-center gap-2">
@@ -93,7 +93,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © {new Date().getFullYear()} Mavix. Custom Software Development.
+            © {new Date().getFullYear()} Appnest. Custom Software Development.
           </p>
         </div>
       </div>

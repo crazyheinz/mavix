@@ -80,7 +80,7 @@ const Services = () => {
             Van idee naar werkende software — met duidelijke keuzes en controle.
           </p>
           <p className="text-muted-foreground max-w-3xl mx-auto">
-            Mavix helpt organisaties om digitale oplossingen te bouwen die aansluiten bij hun context, processen en ambities.
+            Appnest helpt organisaties om digitale oplossingen te bouwen die aansluiten bij hun context, processen en ambities.
             We combineren strategisch inzicht met technische uitvoering, zodat je geen tijd of budget verliest aan verkeerde keuzes.
           </p>
         </div>
