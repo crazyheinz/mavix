@@ -26,7 +26,7 @@ const About = () => {
     <section id="over" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Over Mavix</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Over Appnest</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Een team van ervaren developers met passie voor kwaliteit
           </p>
@@ -37,7 +37,7 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <p className="text-muted-foreground leading-relaxed">
-                Mavix is een software development bureau opgericht door developers met 10+ jaar ervaring in het bouwen van complexe systemen.
+                Appnest is een software development bureau opgericht door developers met 10+ jaar ervaring in het bouwen van complexe systemen.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 We geloven dat goede software begint bij goede code. Daarom werken we met moderne technologieën, best practices en een focus op onderhoudbaarheid.
@@ -54,7 +54,7 @@ const About = () => {
 
           {/* Values Cards */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold mb-8">Waar Mavix voor staat</h3>
+            <h3 className="text-2xl font-bold mb-8">Waar Appnest voor staat</h3>
             {values.map((value, index) => (
               <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth">
                 <CardContent className="p-6">
