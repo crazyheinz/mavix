@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Zap, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import hannesDeBackerImage from "@/assets/hannes-de-backer.png";
 
 const About = () => {
   const values = [
@@ -18,9 +19,17 @@ const About = () => {
     {
       icon: <Users className="h-6 w-6" />,
       title: "Directe Communicatie",
-      description: "Geen account managers, je praat direct met de developers."
+      description: "Geen account managers, je praat direct met de developer."
     }
   ];
+
+  const expertise = [
+    "Digitale product- en appontwikkeling",
+    "Procesautomatisatie & interne tools",
+    "Brug tussen business, technologie en AI",
+  ];
+
+  const companies = ["Cegeka", "NTT", "Telenet Business"];
 
   return (
     <section id="over" className="py-20 px-4 bg-muted/30">
@@ -28,22 +37,64 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Over Appnest</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Een team van ervaren developers met passie voor kwaliteit
+            Software development met 10+ jaar ervaring in complexe systemen
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* About Content */}
-          <div className="space-y-8">
+        {/* Founder Section */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="order-2 lg:order-1">
+            <div className="aspect-square max-w-md mx-auto lg:mx-0 overflow-hidden rounded-2xl shadow-medium">
+              <img 
+                src={hannesDeBackerImage} 
+                alt="Hannes De Backer - Founder" 
+                className="w-full h-full object-cover object-center" 
+              />
+            </div>
+          </div>
+          
+          <div className="order-1 lg:order-2 space-y-6">
+            <div>
+              <h3 className="text-2xl font-bold mb-1">Hannes De Backer</h3>
+              <p className="text-primary font-medium text-lg mb-4">Founder & Solution Lead</p>
+              <p className="text-muted-foreground leading-relaxed">
+                Specialist in digitale transformatie met een focus op het vertalen van complexe businessbehoeften naar schaalbare applicaties. Van initiële analyse tot het finale oplossingsontwerp en de uitvoering — altijd met oog voor maximale impact en technologische maturiteit.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {expertise.map((item, i) => (
+                <span key={i} className="text-sm bg-primary/10 text-primary px-3 py-1.5 rounded-full">
+                  {item}
+                </span>
+              ))}
+            </div>
+
+            <div>
+              <p className="text-sm text-muted-foreground mb-2 font-medium">Ervaring opgedaan bij:</p>
+              <div className="flex flex-wrap items-center gap-2">
+                {companies.map((company, i) => (
+                  <span
+                    key={i}
+                    className="text-sm font-semibold bg-muted text-foreground px-3 py-1.5 rounded-md border border-border/50"
+                  >
+                    {company}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Values Section */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="space-y-6">
             <div>
               <p className="text-muted-foreground leading-relaxed">
-                Appnest is een software development bureau opgericht door developers met 10+ jaar ervaring in het bouwen van complexe systemen.
+                Appnest is opgericht vanuit de overtuiging dat goede software begint bij goede code. Moderne technologieën, best practices en een focus op onderhoudbaarheid staan centraal.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                We geloven dat goede software begint bij goede code. Daarom werken we met moderne technologieën, best practices en een focus op onderhoudbaarheid.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mt-4">
-                Van startups tot enterprise - we bouwen software die schaalt, presteert en lang meegaat.
+                Van startups tot enterprise — software die schaalt, presteert en lang meegaat.
               </p>
             </div>
 
@@ -52,9 +103,8 @@ const About = () => {
             </Button>
           </div>
 
-          {/* Values Cards */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold mb-8">Waar Appnest voor staat</h3>
+            <h3 className="text-2xl font-bold mb-4">Waar Appnest voor staat</h3>
             {values.map((value, index) => (
               <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth">
                 <CardContent className="p-6">

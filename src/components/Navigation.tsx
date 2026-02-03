@@ -36,12 +36,12 @@ const Navigation = () => {
               Diensten
             </Link>
             <Link
-              to="/team"
+              to="/werkwijze"
               className={`text-sm font-medium transition-smooth ${
-                isActive('/team') ? 'text-primary' : 'text-muted-foreground hover:text-primary'
+                isActive('/werkwijze') ? 'text-primary' : 'text-muted-foreground hover:text-primary'
               }`}
             >
-              Team
+              Werkwijze
             </Link>
             <Link
               to="/werkwijze"
